@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<!-- 🔧 Animation style (can be placed in <style> tag or CSS file) -->
+<style>
+    @keyframes bgMove {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            rotate: 360deg;
+            /* background-position: 100% 0%; */
+        }
+    }
+
+    .animate-bgMove {
+        animation: bgMove 30s linear infinite;
+        background-size: 80%;
+    }
+
+    /* h1 hero section animation */
+    .text-gradient {
+        font-size: 4rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #1f769f, #00b3be, #16e98c);
+        background-size: 200% 100%;
+        /* doubled */
+        background-position: 0% 0%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        animation: gradientMove 4s linear infinite;
+        display: inline-block;
+    }
+
+    @keyframes gradientMove {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: 200% 0%;
+            /* move more than 100% */
+        }
+    }
+</style>
+
+<body id="image-container">
+    <!-- header -->
+    <header class="w-full h-[95px]  flex justify-center">
+        <nav class="w-[90%] h-full  flex justify-between items-center">
+            <div>
+                <img class="w-[170px]" src="https://techsolit.com/assets/img/logo-techsol.webp" alt="">
+            </div>
+            <div>
+                <ul class="flex gap-9">
+                    <li class="cursor-pointer text-[#1f769f] font-medium">Home</li>
+                    <li class="cursor-pointer hover:text-[#1f769f] duration-7 ease font-medium">About</li>
+                    <li class="cursor-pointer hover:text-[#1f769f] duration-7 ease font-medium">Services</li>
+                    <li class="cursor-pointer hover:text-[#1f769f] duration-7 ease font-medium">E-Book</li>
+                    <li class="cursor-pointer hover:text-[#1f769f] duration-7 ease font-medium">Packages</li>
+                    <li class="cursor-pointer hover:text-[#1f769f] duration-7 ease font-medium">Portfolio</li>
+                    <li class="cursor-pointer hover:text-[#1f769f] duration-7 ease font-medium">Testimonials</li>
+                </ul>
+            </div>
+            <div>
+                <a class="px-6 py-3 rounded-full text-white font-medium"
+                    style="background-image: linear-gradient(to right top, rgb(31, 118, 159), rgb(0, 149, 184), rgb(0, 179, 190), rgb(0, 208, 174), rgb(22, 233, 140));"
+                    href="">Content Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- hero section -->
+    <section class="w-full h-screen  flex justify-center">
+        <div class="w-[90%] h-[550px]  flex justify-between">
+            <div class="w-[45%] h-auto flex flex-col gap-3 py-16">
+                <h2 class="text-2xl font-medium uppercase text-[#1F769F]">10 years’ worth experience in design and
+                    development</h2>
+                <h1 class="text-7xl font-medium text-gradient">Get the Online</h1>
+                <h4 class="text-7xl">Presence of Your Dreams</h4>
+                <p>We make your life a whole lot easier by providing you a complete and proper solution for design and
+                    development. Techsol is a complete business solution which caters to you all of your creative
+                    business needs and help you thrive in your specific industry.</p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <!-- Gradient Border Button -->
+                    <div
+                        class="inline-block p-[2px] rounded-full bg-gradient-to-tr from-[#1f769f] via-[#00b3be] to-[#16e98c]">
+                        <a href="#" class="block px-5 py-2 rounded-full font-medium bg-white text-gray-800">
+                            Work With Us
+                        </a>
+                    </div>
+
+                    <!-- Gradient Background Button -->
+                    <a href="#"
+                        class="px-5 py-2 rounded-full font-medium text-white bg-gradient-to-tr from-[#1f769f] via-[#00b3be] to-[#16e98c]">
+                        View Process
+                    </a>
+                </div>
+            </div>
+
+            <!-- 🔥 Only added class: animate-bgMove -->
+            <div class="w-[50%] h-auto relative flex justify-center items-center overflow-hidden">
+                <img class="w-[80%] animate-bgMove" src="https://techsolit.com/assets/img/Path%203336.webp" alt="">
+
+                <!-- Moving image -->
+                <img id="moving-img" class="absolute top-16 left-0 will-change-transform"
+                    src="https://techsolit.com/assets/img/desktop.webp" alt="">
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <script>
+        const container = document.getElementById("image-container");
+        const image = document.getElementById("moving-img");
+
+        let mouseX = 0;
+        let mouseY = 0;
+        let currentX = 0;
+        let currentY = 0;
+
+        const maxOffset = 20; // max movement in px
+
+        // Mouse move tracking
+        container.addEventListener("mousemove", (e) => {
+            const rect = container.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+
+            // Calculate offset from center (inverse for parallax feel)
+            mouseX = ((centerX - x) / centerX) * maxOffset;
+            mouseY = ((centerY - y) / centerY) * maxOffset;
+        });
+
+        // Smooth animation loop
+        function animate() {
+            // Interpolate current position towards mouse position
+            currentX += (mouseX - currentX) * 0.1;
+            currentY += (mouseY - currentY) * 0.1;
+
+            image.style.transform = `translate(${currentX}px, ${currentY}px)`;
+
+            requestAnimationFrame(animate);
+        }
+
+        // Reset position on mouse leave
+        container.addEventListener("mouseleave", () => {
+            mouseX = 0;
+            mouseY = 0;
+        });
+
+        // Start animation
+        animate();
+    </script>
+</body>
+
+</html>
