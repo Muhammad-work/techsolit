@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 
@@ -28,6 +29,31 @@
     /* h1 hero section animation */
     .text-gradient {
         font-size: 4rem;
+        font-weight: 700;
+        background: linear-gradient(90deg, #1f769f, #00b3be, #16e98c);
+        background-size: 200% 100%;
+        /* doubled */
+        background-position: 0% 0%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: transparent;
+        animation: gradientMove 4s linear infinite;
+        display: inline-block;
+    }
+
+    @keyframes gradientMove {
+        0% {
+            background-position: 0% 0%;
+        }
+
+        100% {
+            background-position: 200% 0%;
+            /* move more than 100% */
+        }
+    }
+
+     .i-gradient {
+        font-size: 1.2rem;
         font-weight: 700;
         background: linear-gradient(90deg, #1f769f, #00b3be, #16e98c);
         background-size: 200% 100%;
@@ -111,7 +137,7 @@
                 <img class="w-[80%] animate-bgMove" src="https://techsolit.com/assets/img/Path%203336.webp" alt="">
 
                 <!-- Moving image -->
-                <img id="moving-img" class="absolute top-16 left-0 will-change-transform"
+                <img  class="absolute top-16 left-0 will-change-transform moving-img"
                     src="https://techsolit.com/assets/img/desktop.webp" alt="">
             </div>
 
@@ -119,7 +145,7 @@
     </section>
 
     <!-- company about section -->
-     <section class="w-full h-auto flex justify-center">
+    <section class="w-full h-auto flex justify-center">
         <div class="w-[90%] h-[150px]  flex justify-center items-center gap-5">
 
             <div class="w-[200px] h-full  flex flex-col justify-center items-center">
@@ -141,56 +167,106 @@
                 <h1 class="text-4xl font-bold">23+</h1>
                 <p>Excellence Awards</p>
             </div>
-            
+
         </div>
-     </section>
+    </section>
 
 
-    <script>
-        const container = document.getElementById("image-container");
-        const image = document.getElementById("moving-img");
+    <!-- about section -->
+    <section class="w-full h-auto flex justify-center">
+        <div class="w-[90%] h-full flex justify-between py-13">
+            <div class="w-[50%] h-full relative moving-img">
+                <img src="https://techsolit.com/assets/img/about-img01.webp" alt="">
+                <img class="w-[37%] absolute bottom-0 left-[11rem]" src="https://techsolit.com/assets/img/about-img03.webp" alt="">
+            </div>
+            <div class="w-[50%] h-full flex flex-col gap-3">
+                <h2 class="text-2xl font-medium uppercase text-[#1F769F]">More about Techsol</h2>
+                <h1 class="text-5xl font-medium">About Us</h1>
+                <p>The business, which has more than 10 years of expertise, has come a long way since it was founded,
+                    conquering many obstacles and winning many awards and honors. Our ability to address the needs of
+                    clients and candidates whose demands go beyond local markets is made possible by the team. Our
+                    onshore staff gives us perspective into international business and possibilities, while our strong
+                    local foundations give us valuable insights into industry and culture.</p>
+                <div>
+                    <ul class="flex flex-col gap-3">
+                        <li class="flex  gap-3 ">
+                            <span><i class="fa-solid fa-arrow-right  i-gradient"></i></span>
+                            <span>
+                                <span>Boosting the Organization:</span>
+                                <p>Hiring the most polished and skilled individuals to help put the work satisfaction of the company at higher values with our clients, and making sure we meet every demand our client requires.</p>
+                            </span>
+                        </li>
+                        <li class="flex  gap-3 ">
+                            <span><i class="fa-solid fa-arrow-right  i-gradient"></i></span>
+                            <span>
+                                <span>Boosting the Organization:</span>
+                                <p>Hiring the most polished and skilled individuals to help put the work satisfaction of the company at higher values with our clients, and making sure we meet every demand our client requires.</p>
+                            </span>
+                        </li>
+                        <li class="flex  gap-3 ">
+                            <span><i class="fa-solid fa-arrow-right  i-gradient"></i></span>
+                            <span>
+                                <span>Boosting the Organization:</span>
+                                <p>Hiring the most polished and skilled individuals to help put the work satisfaction of the company at higher values with our clients, and making sure we meet every demand our client requires.</p>
+                            </span>
+                        </li>
+                    </ul>
+                    <a href="" class="px-5 py-2 rounded-full font-medium text-white bg-gradient-to-tr from-[#1f769f] via-[#00b3be] to-[#16e98c] inline-block mt-3">View More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        let mouseX = 0;
-        let mouseY = 0;
-        let currentX = 0;
-        let currentY = 0;
 
-        const maxOffset = 20; // max movement in px
+ <script>
+    const container = document.getElementById("image-container");
+    const images = document.getElementsByClassName("moving-img");
 
-        // Mouse move tracking
-        container.addEventListener("mousemove", (e) => {
-            const rect = container.getBoundingClientRect();
-            const x = e.clientX - rect.left;
-            const y = e.clientY - rect.top;
+    let mouseX = 0;
+    let mouseY = 0;
+    let currentX = 0;
+    let currentY = 0;
 
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
+    const maxOffset = 20; // max movement in px
 
-            // Calculate offset from center (inverse for parallax feel)
-            mouseX = ((centerX - x) / centerX) * maxOffset;
-            mouseY = ((centerY - y) / centerY) * maxOffset;
-        });
+    // Mouse move tracking
+    container.addEventListener("mousemove", (e) => {
+        const rect = container.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
 
-        // Smooth animation loop
-        function animate() {
-            // Interpolate current position towards mouse position
-            currentX += (mouseX - currentX) * 0.1;
-            currentY += (mouseY - currentY) * 0.1;
+        const centerX = rect.width / 2;
+        const centerY = rect.height / 2;
 
-            image.style.transform = `translate(${currentX}px, ${currentY}px)`;
+        // Calculate offset from center (inverse for parallax feel)
+        mouseX = ((centerX - x) / centerX) * maxOffset;
+        mouseY = ((centerY - y) / centerY) * maxOffset;
+    });
 
-            requestAnimationFrame(animate);
+    // Smooth animation loop
+    function animate() {
+        // Interpolate current position towards mouse position
+        currentX += (mouseX - currentX) * 0.1;
+        currentY += (mouseY - currentY) * 0.1;
+
+        // Apply transform to all elements with class "moving-img"
+        for (let i = 0; i < images.length; i++) {
+            images[i].style.transform = `translate(${currentX}px, ${currentY}px)`;
         }
 
-        // Reset position on mouse leave
-        container.addEventListener("mouseleave", () => {
-            mouseX = 0;
-            mouseY = 0;
-        });
+        requestAnimationFrame(animate);
+    }
 
-        // Start animation
-        animate();
-    </script>
+    // Reset position on mouse leave
+    container.addEventListener("mouseleave", () => {
+        mouseX = 0;
+        mouseY = 0;
+    });
+
+    // Start animation
+    animate();
+</script>
+
 </body>
 
 </html>
