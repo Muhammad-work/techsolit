@@ -2,7 +2,7 @@
     <header id="header-outer">
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html">
+                <a class="navbar-brand" href="{{route('home')}}">
                     <img src="assets/img/logo.png" alt="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -12,8 +12,8 @@
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                     <ul class="navbar-nav main-nav mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link ">About</a></li>
+                        <li class="nav-item"><a href="{{route('home')}}" class="nav-link active">Home</a></li>
+                        <li class="nav-item"><a href="{{route('about')}}" class="nav-link ">About</a></li>
                         <li class="nav-item service-menu dropdown">
                             <a href="javascript:;" class="nav-link dropdown-toggle " id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">Services</a>
@@ -24,20 +24,20 @@
                                 <li><a class="dropdown-item " href="thesis.html">Thesis</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item"><a href="e-book.html" class="nav-link ">E-Book</a></li>
-                        <li class="nav-item"><a href="packages.html" class="nav-link ">Packages</a></li>
-                        <li class="nav-item"><a href="portfolio.html" class="nav-link ">Portfolio</a></li>
-                        <li class="nav-item"><a href="testimonials.html" class="nav-link ">Testimonials</a></li>
+                        <li class="nav-item"><a href="{{route('e-book')}}" class="nav-link ">E-Book</a></li>
+                        <li class="nav-item"><a href="{{route('packages')}}" class="nav-link ">Packages</a></li>
+                        <li class="nav-item"><a href="{{route('portfolio')}}" class="nav-link ">Portfolio</a></li>
+                        <li class="nav-item"><a href="{{route('testimonials')}}" class="nav-link ">Testimonials</a></li>
                     </ul>
                     <ul class="navbar-nav cnt-info">
-                        <li class="nav-item"><a href="contact-us.html" class="theme-btn">Contact Now</a></li>
+                        <li class="nav-item"><a href="{{route('contact-us')}}" class="theme-btn">Contact Now</a></li>
                     </ul>
                 </div>
                 <!-- mega service menu -->
                 <div class="service-dropdown dropdown-sec" style="display:none;">
                     <div class="row service-box justify-content-center">
                         <div class="col-lg-3 web">
-                            <a href="services/web-design.html" class="service-type-box">
+                            <a href="{{route('logo')}}" class="service-type-box">
                                 <img alt="img" src="assets/img/icons/web.png" class="service-icon">
                                 <h2>Logo Design</h2>
                                 <p>A unique logo is the face of your brand.
@@ -46,7 +46,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3 logo">
-                            <a href="services/logo-design.html" class="service-type-box">
+                            <a href="{{route('socail')}}" class="service-type-box">
                                 <img alt="img" src="assets/img/icons/logo.png" class="service-icon">
                                 <h2>Social Media Design</span></h2>
                                 <p>From posts to banners, we design engaging
@@ -55,7 +55,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3 ecom">
-                            <a href="services/ecommerce.html" class="service-type-box">
+                            <a href="{{route('Presentation')}}" class="service-type-box">
                                 <img alt="img" src="assets/img/icons/ecom.png" class="service-icon">
                                 <h2>Presentation Design</h2>
                                 <p>Professional and creative pitch decks,
@@ -64,7 +64,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3 seo">
-                            <a href="services/seo.html" class="service-type-box">
+                            <a href="{{route('cover-design')}}" class="service-type-box">
                                 <img alt="img" src="assets/img/icons/seo.png" class="service-icon">
                                 <h2>E-Book & Cover Design</h2>
                                 <p>Beautifully designed e-books and covers that combine
@@ -73,7 +73,7 @@
                             </a>
                         </div>
                         <div class="col-lg-3 smm">
-                            <a href="services/smm.html" class="service-type-box">
+                            <a href="{{route('ui')}}" class="service-type-box">
                                 <img alt="img" src="assets/img/icons/smm.png" class="service-icon">
                                 <h2>UI/UX Design</h2>
                                 <p>Intuitive, user-friendly, and visually consistent

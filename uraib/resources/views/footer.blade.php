@@ -20,23 +20,23 @@
                     <div class="col-lg-3 foot-services">
                         <h4>All Services</h4>
                         <ul>
-                            <li><a href="services/web-design.html">UI/UX Design</a></li>
-                            <li><a href="services/logo-design.html"> Presentation Design</a></li>
-                            <li><a href="services/ecommerce.html"> Social Media Design</a></li>
-                            <li><a href="services/seo.html"> E-Book & Cover Design</a></li>
-                            <li><a href="services/smm.html"> Logo Design</a></li>
+                            <li><a href="{{route('ui')}}">UI/UX Design</a></li>
+                            <li><a href="{{route('Presentation')}}"> Presentation Design</a></li>
+                            <li><a href="{{route('socail')}}"> Social Media Design</a></li>
+                            <li><a href="{{route('cover-design')}}"> E-Book & Cover Design</a></li>
+                            <li><a href="{{route('logo')}}"> Logo Design</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3">
                         <h4>Quick Links</h4>
                         <ul>
-                            <li><a href="index.html"> Home</a></li>
-                            <li><a href="about-2.html"> About</a></li>
-                            <li><a href="project.html"> Services</a></li>
-                            <li><a href="package.html"> Packages</a></li>
-                            <li><a href="package.html"> Careers</a></li>
-                            <li><a href="package.html"> Portfolio</a></li>
-                            <li><a href="package.html"> Testimonials</a></li>
+                            <li><a href="{{route('home')}}"> Home</a></li>
+                            <li><a href="{{route('about')}}"> About</a></li>
+                            <li><a href="#"> Services</a></li>
+                            <li><a href="{{route('packages')}}"> Packages</a></li>
+                            <li><a href="{{route('e-book')}}"> Careers</a></li>
+                            <li><a href="{{route('portfolio')}}"> Portfolio</a></li>
+                            <li><a href="{{route('testimonials')}}"> Testimonials</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3 p-0">

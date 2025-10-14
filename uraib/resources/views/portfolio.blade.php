@@ -1,134 +1,8 @@
-<!doctype html>
-<html lang="en">
+@extends('index')
+@extends('nav')
+@extends('footer')
 
-<!-- Mirrored from techsolit.com/portfolio by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Oct 2025 17:13:48 GMT -->
-<!-- Added by HTTrack -->
-<meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
-
-<head>
-    <title>TECHSOL</title>
-    <meta charset="utf-8">
-    <meta name="description" content="" />
-    <meta name="Keywords" content="" />
-
-
-
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/techsol-fav.webp">
-    <!-- Place favicon.ico in the root directory -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
-    <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <style>
-        .foot-about a img,
-        .navbar-light a.navbar-brand img {
-            width: 170px;
-        }
-
-        .foot-about a img {
-            filter: invert(1) brightness(3.5);
-        }
-    </style>
-
-</head>
-
-<body class="portfoliopage inner-page banner-form">
-
-
-    <header id="header-outer">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="assets/img/logo.png" alt="logo">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-                    <ul class="navbar-nav main-nav mb-2 mb-lg-0">
-                        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
-                        <li class="nav-item"><a href="about.html" class="nav-link ">About</a></li>
-                        <li class="nav-item service-menu dropdown">
-                            <a href="javascript:;" class="nav-link dropdown-toggle " id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">Services</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item " href="dissertation.html">Dissertation</a></li>
-                                <li><a class="dropdown-item " href="essay.html">Essay</a></li>
-                                <li><a class="dropdown-item " href="assignment.html">Assignment</a></li>
-                                <li><a class="dropdown-item " href="thesis.html">Thesis</a></li>
-                            </ul>
-                        </li>
-                        <li class="nav-item"><a href="e-book.html" class="nav-link ">E-Book</a></li>
-                        <li class="nav-item"><a href="packages.html" class="nav-link ">Packages</a></li>
-                        <li class="nav-item"><a href="portfolio.html" class="nav-link ">Portfolio</a></li>
-                        <li class="nav-item"><a href="testimonials.html" class="nav-link ">Testimonials</a></li>
-                    </ul>
-                    <ul class="navbar-nav cnt-info">
-                        <li class="nav-item"><a href="contact-us.html" class="theme-btn">Contact Now</a></li>
-                    </ul>
-                </div>
-                <!-- mega service menu -->
-                <div class="service-dropdown dropdown-sec" style="display:none;">
-                    <div class="row service-box justify-content-center">
-                        <div class="col-lg-3 web">
-                            <a href="services/web-design.html" class="service-type-box">
-                                <img alt="img" src="assets/img/icons/web.png" class="service-icon">
-                                <h2>Logo Design</h2>
-                                <p>A unique logo is the face of your brand.
-                                    At Nova Creation, we design modern and
-                                    memorable logos that leave a lasting impression.</p>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 logo">
-                            <a href="services/logo-design.html" class="service-type-box">
-                                <img alt="img" src="assets/img/icons/logo.png" class="service-icon">
-                                <h2>Social Media Design</span></h2>
-                                <p>From posts to banners, we design engaging
-                                    social media content that boosts your brand’s
-                                    online presence and connects with your audience.</p>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 ecom">
-                            <a href="services/ecommerce.html" class="service-type-box">
-                                <img alt="img" src="assets/img/icons/ecom.png" class="service-icon">
-                                <h2>Presentation Design</h2>
-                                <p>Professional and creative pitch decks,
-                                    business presentations, and slides that make
-                                    your ideas stand out with impact.</p>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 seo">
-                            <a href="services/seo.html" class="service-type-box">
-                                <img alt="img" src="assets/img/icons/seo.png" class="service-icon">
-                                <h2>E-Book & Cover Design</h2>
-                                <p>Beautifully designed e-books and covers that combine
-                                    readability with creativity, giving your content a
-                                    professional edge.</p>
-                            </a>
-                        </div>
-                        <div class="col-lg-3 smm">
-                            <a href="services/smm.html" class="service-type-box">
-                                <img alt="img" src="assets/img/icons/smm.png" class="service-icon">
-                                <h2>UI/UX Design</h2>
-                                <p>Intuitive, user-friendly, and visually consistent
-                                    UI/UX designs that bring your digital
-                                    products to life.</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-
+@section('content')
     <section class="banner-home bg_blue">
         <div class="container text-white">
             <div class="row banner-top align-items-center">
@@ -166,8 +40,7 @@
                             </div>
                             <div class="form-group">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                                <textarea class="form-control" placeholder="Additional question if any"
-                                    name="h_msg"></textarea>
+                                <textarea class="form-control" placeholder="Additional question if any" name="h_msg"></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="h_b_btn" name="banner_btn">Request A Callback</button>
@@ -191,8 +64,8 @@
             </div>
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a id="pills-logo-tab" class="active" data-bs-toggle="pill" data-bs-target="#pills-logo"
-                        type="button" role="tab" aria-controls="pills-logo" aria-selected="true">Presentation Design</a>
+                    <a id="pills-logo-tab" class="active" data-bs-toggle="pill" data-bs-target="#pills-logo" type="button"
+                        role="tab" aria-controls="pills-logo" aria-selected="true">Presentation Design</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab"
@@ -203,12 +76,12 @@
                         aria-controls="pills-ecom" aria-selected="false">Social Media Design</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button" role="tab"
-                        aria-controls="pills-video" aria-selected="false">E-Book & Cover Design</a>
+                    <a id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button"
+                        role="tab" aria-controls="pills-video" aria-selected="false">E-Book & Cover Design</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a id="pills-illus-tab" data-bs-toggle="pill" data-bs-target="#pills-illus" type="button" role="tab"
-                        aria-controls="pills-illus" aria-selected="false">Logo Design</a>
+                    <a id="pills-illus-tab" data-bs-toggle="pill" data-bs-target="#pills-illus" type="button"
+                        role="tab" aria-controls="pills-illus" aria-selected="false">Logo Design</a>
                 </li>
 
             </ul>
@@ -480,114 +353,4 @@
             </div>
         </div>
     </section>
-
-    <footer class="bg-blue footer-outer">
-        <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-3 foot-about">
-                        <a href="index.html"><img src="assets/img/footer-logo.png" alt="footer-logo"></a>
-                        <p>Nova Creation is a creative design studio
-                            dedicated to crafting logos, websites,
-                            social media visuals, and presentations that
-                            inspire and connect. We bring ideas to life
-                            with originality, clarity, and attention to detail.</p>
-                        <ul class="foot-info">
-                            <li><a href="mailto:info@techsolit.com"> info@techsolit.com </a></li>
-                            <li><a href="tel:+12345678901"> +12345678901</a></li>
-                            <li><a href="#"> your text goes here it's just a placeholder</a></li>
-
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 foot-services">
-                        <h4>All Services</h4>
-                        <ul>
-                            <li><a href="services/web-design.html">UI/UX Design</a></li>
-                            <li><a href="services/logo-design.html"> Presentation Design</a></li>
-                            <li><a href="services/ecommerce.html"> Social Media Design</a></li>
-                            <li><a href="services/seo.html"> E-Book & Cover Design</a></li>
-                            <li><a href="services/smm.html"> Logo Design</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="index.html"> Home</a></li>
-                            <li><a href="about-2.html"> About</a></li>
-                            <li><a href="project.html"> Services</a></li>
-                            <li><a href="package.html"> Packages</a></li>
-                            <li><a href="package.html"> Careers</a></li>
-                            <li><a href="package.html"> Portfolio</a></li>
-                            <li><a href="package.html"> Testimonials</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3 p-0">
-                        <h4>Contact Details</h4>
-                        <form class="newsletter">
-                            <div class="form-group">
-                                <input class="form-control" type="email" placeholder="Enter Your Email Here"
-                                    name="email">
-                            </div>
-                            <button type="button">Subscribe Now</button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="container">
-                <div class="d-flex justify-content-between">
-                    <p>Copyright © 2025 NOVA CREATION All Rights Reserved. Privacy | Terms of Use<a
-                            href="index.html">Privacy</a> | <a href="index.html">Terms of Use</a></p>
-                    <div class="foot-social">
-                        <a href="https://www.facebook.com/designsmakers99/" target="_blank"><i
-                                class="fa fa-facebook"></i></a>
-                        <a href="https://www.instagram.com/designsmakers_/" target="_blank"><i
-                                class="fa fa-instagram"></i></a>
-                        <a href="https://www.linkedin.com/in/designs-makers-8769b9258/" target="_blank"><i
-                                class="fa fa-linkedin"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <!-- nft-address -->
-    <div class="modal fade theme-popup" id="propertydetails" tabindex="-1" aria-labelledby="propertydetails"
-        aria-modal="true" role="dialog">
-        <div class="modal-dialog modal-dialog-centered text-center">
-            <div class="modal-content first-step">
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                <div class="first-step">
-                    <img src="#" alt="popoup-img">
-                    <div class="form-group">
-                        <div class="d-flex justify-content-between">
-                            <label class="proximab">NFT Address</label>
-                            <a href="#" class="#"><i class="fa fa-plus"></i> Add More</a>
-                        </div>
-                        <input class="form-control" name="nftaddress" type="text">
-                    </div>
-                    <a class="theme-btn btn-center">Submit</a>
-                </div>
-                <div class="sec-step" style="display:none;">
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    <h2 class="text-center">Plan Is Unlcoked</h2>
-                    <a href="#" class="theme-btn btn-center">View Subscription</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
-    <script type="text/javascript"
-        src="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
-</body>
-
-<!-- Mirrored from techsolit.com/portfolio by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Oct 2025 17:13:48 GMT -->
-
-</html>
+@endsection

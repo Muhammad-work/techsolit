@@ -6,24 +6,24 @@
 <meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
 
 <head>
-    <title>TECHSOL</title>
+    <title>NOVA CREATION</title>
     <meta charset="utf-8">
     <meta name="description" content="" />
     <meta name="Keywords" content="" />
 
 
 
-    <link rel="shortcut icon" type="image/x-icon" href="assets/img/techsol-fav.webp">
+    {{-- <link rel="shortcut icon" type="image/x-icon" href="assets/img/techsol-fav.webp"> --}}
     <!-- Place favicon.ico in the root directory -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- CSS here -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
-    <link rel="stylesheet" href="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css')}}">
+    <link rel="stylesheet" href="{{asset('cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css')}}">
+    <link rel="stylesheet" href="{{asset('cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css')}}">
     <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
     <style>
         .foot-about a img,
         .navbar-light a.navbar-brand img {
@@ -77,13 +77,13 @@
 
 
 
-    <script src="../ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="{{asset('ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js')}}"></script>
+    <script src="{{asset('cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js')}}"></script>
+    <script src="{{asset('cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js')}}"></script>
     <script type="text/javascript"
-        src="../cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+        src="{{asset('cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js')}}"></script>
+    <script src="{{asset('assets/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{asset('assets/js/main.js')}}"></script>
 </body>
 
 <!-- Mirrored from techsolit.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 12 Oct 2025 17:13:35 GMT -->
