@@ -704,7 +704,7 @@ section.tesimonials {
 }
 
 .process-sec .lf-side {
-    padding: 30px 54px;
+    padding: 50px 90px;
     position: relative;
     overflow: hidden;
 }
@@ -774,7 +774,7 @@ footer.footer-outer {
     height: 100%;
     background-color: rgb(255, 255, 255);
     overflow: hidden;
-    padding: 140px 0px 0px;
+    padding: 160px 140px 0px 60px;
     position: relative;
     z-index: 1;
 }
@@ -1875,6 +1875,13 @@ ul.about-list li span.title a {
 @media only screen and (max-width: 992px) {
     .theme-content {
         text-align: center;
+    }
+
+    footer.footer-outer {
+        padding-top: 140px;
+        padding-bottom: 0px;
+        padding-right: 50px;
+        padding-left: 50px;
     }
 
     section.banner {

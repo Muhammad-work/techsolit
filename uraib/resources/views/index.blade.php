@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="{{asset('cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css')}}">
     <link href="../unpkg.com/aos%402.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('assets/css/main.css')}}">
+    <link rel="shortcut icon" href="{{asset('assets/img/title.png')}}" type="image/x-icon">
     <style>
         .foot-about a img,
         .navbar-light a.navbar-brand img {

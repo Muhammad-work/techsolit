@@ -217,42 +217,42 @@
                     <ul class="responsive-slider">
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/10.webp') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-1.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/09.webp') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-2.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/08.webp') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-3.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/02.webp') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-4.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/10.webp') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-5.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/09.webp') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-6.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/08.webp') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-7.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/02.webp') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-8.jpg') }}">
                             </a>
                         </li>
                     </ul>
@@ -261,25 +261,25 @@
                     <ul class="responsive-slider">
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/website/thumb-1.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/website/ui-1.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/website/thumb-2.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/website/ui-2.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/website/thumb-3.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/website/ui-3.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/website/thumb-4.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/website/ui-4.jpg') }}">
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/website/thumb-5.jpg') }}">
                             </a>
@@ -298,42 +298,42 @@
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/website/thumb-3.jpg') }}">
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="pills-ecom" role="tabpanel" aria-labelledby="pills-ecom-tab">
                     <ul class="responsive-slider">
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/1.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-1.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/2.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-2.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/3.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-3.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/4.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-4.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/5.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-5.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/6.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-6.jpg') }}">
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/7.jpg') }}">
                             </a>
@@ -342,17 +342,17 @@
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/8.jpg') }}">
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
                     <ul class="responsive-slider">
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/1.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/ebook.jpg') }}">
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/2.jpg') }}">
                             </a>
@@ -386,27 +386,27 @@
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/8.jpg') }}">
                             </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="pills-illus" role="tabpanel" aria-labelledby="pills-illus-tab">
                     <ul class="responsive-slider">
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/illustration/1.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/logo-1.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/illustration/2.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/logo-2.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/illustration/3.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/logo-3.jpg') }}">
                             </a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/illustration/4.jpg') }}">
                             </a>
@@ -430,52 +430,7 @@
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/illustration/8.jpg') }}">
                             </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-pane fade" id="pills-market" role="tabpanel" aria-labelledby="pills-market-tab">
-                    <ul class="responsive-slider">
-                        <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/branding/1.jpg') }}">
-                            </a>
-                        </li>
-                        <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img"
-                                    src="{{ asset('assets/img/portfolio/branding/2.jpg') }}">
-                            </a>
-                        </li>
-                        <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{asset('assets/img/portfolio/branding/3.jpg')}}">
-                            </a>
-                        </li>
-                        <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{asset('assets/img/portfolio/branding/4.jpg')}}">
-                            </a>
-                        </li>
-                        <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{asset('assets/img/portfolio/branding/5.jpg')}}">
-                            </a>
-                        </li>
-                        <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{asset('assets/img/portfolio/branding/1.jpg')}}">
-                            </a>
-                        </li>
-                        <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{asset('assets/img/portfolio/branding/6.jpg')}}">
-                            </a>
-                        </li>
-                        <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{asset('assets/img/portfolio/branding/7.jpg')}}">
-                            </a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>

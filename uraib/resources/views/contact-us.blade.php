@@ -66,15 +66,14 @@
                             <h2 class="accordion-header" id="headingOne">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    Accordion Item #1
+                                    General Inquiries #1
                                 </button>
                             </h2>
                             <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    your text goes here it's just a placeholder your text goes here it's just a
-                                    placeholder your text goes here it's just a placeholder your text goes here it's
-                                    just a placeholder
+                                    If you have questions about our services, pricing, or process, feel free to reach out.
+                                    Our team is happy to assist you with any information you need before getting started.
                                 </div>
                             </div>
                         </div>
@@ -82,15 +81,14 @@
                             <h2 class="accordion-header" id="headingTwo">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                    Accordion Item #2
+                                    Project Support #2
                                 </button>
                             </h2>
                             <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    your text goes here it's just a placeholder your text goes here it's just a
-                                    placeholder your text goes here it's just a placeholder your text goes here it's
-                                    just a placeholder
+                                    Already working with us? You can contact your project manager directly or email our
+                                    support team for updates, revisions, or help with your ongoing project.
                                 </div>
                             </div>
                         </div>
@@ -98,15 +96,14 @@
                             <h2 class="accordion-header" id="headingThree">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                    Accordion Item #3
+                                    Feedback & Suggestions #3
                                 </button>
                             </h2>
                             <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    your text goes here it's just a placeholder your text goes here it's just a
-                                    placeholder your text goes here it's just a placeholder your text goes here it's
-                                    just a placeholder
+                                    We value your feedback! Share your experience or suggestions to help us improve our
+                                    services. Every message helps us grow and serve you better.
                                 </div>
                             </div>
                         </div>

@@ -4,15 +4,15 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 foot-about">
-                        <a href="index.html"><img src="assets/img/footer-logo.png" alt="footer-logo"></a>
+                        <a href="{{route('home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="footer-logo"></a>
                         <p>Nova Creation is a creative design studio
                             dedicated to crafting logos, websites,
                             social media visuals, and presentations that
                             inspire and connect. We bring ideas to life
                             with originality, clarity, and attention to detail.</p>
                         <ul class="foot-info">
-                            <li><a href="mailto:info@techsolit.com"> info@techsolit.com </a></li>
-                            <li><a href="tel:+12345678901"> +12345678901</a></li>
+                            <li><a href="mailto:info@techsolit.com"> info@novacreation.uk </a></li>
+                            <li><a href="tel:+12345678901"> +93 3283 394 910</a></li>
                             <li><a href="#"> your text goes here it's just a placeholder</a></li>
 
                         </ul>
@@ -55,7 +55,7 @@
         <div class="footer-bottom">
             <div class="container">
                 <div class="d-flex justify-content-between">
-                    <p>Copyright © 2025 NOVA CREATION All Rights Reserved. Privacy | Terms of Use<a
+                    <p>Copyright © 2025 NOVACREATION.UK All Rights Reserved. Privacy | Terms of Use<a
                             href="index.html">Privacy</a> | <a href="index.html">Terms of Use</a></p>
                     <div class="foot-social">
                         <a href="https://www.facebook.com/designsmakers99/" target="_blank"><i
