@@ -20,7 +20,13 @@
                 <div class="col-lg-5">
                     <div class="h_banner_form bg-white gradient-animate">
                         <h2 class="theme-hd">Hire A Creative Mind</h2>
-                        <form action="https://techsolit.com/code.php" method="post" onsubmit="return checkform(this);">
+                        <form action="{{ route('callback.submit') }}" method="post">
+                            @csrf
+                            @if (session('success'))
+                                <div style="color: green; font-weight: bold; margin-bottom: 15px;">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
                             <div class="d-flex">
                                 <div class="form-group">
                                     <i class="fa fa-user" aria-hidden="true"></i>
@@ -64,17 +70,17 @@
             </div>
             <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
-                    <a id="pills-logo-tab" class="active" data-bs-toggle="pill" data-bs-target="#pills-logo"
-                        type="button" role="tab" aria-controls="pills-logo" aria-selected="true">Presentation
+                    <a id="pills-logo-tab" class="active" data-bs-toggle="pill" data-bs-target="#pills-logo" type="button"
+                        role="tab" aria-controls="pills-logo" aria-selected="true">Presentation
                         Design</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button"
-                        role="tab" aria-controls="pills-web" aria-selected="false">UI/UX Design</a>
+                    <a id="pills-web-tab" data-bs-toggle="pill" data-bs-target="#pills-web" type="button" role="tab"
+                        aria-controls="pills-web" aria-selected="false">UI/UX Design</a>
                 </li>
                 <li class="nav-item" role="presentation">
-                    <a id="pills-ecom-tab" data-bs-toggle="pill" data-bs-target="#pills-ecom" type="button"
-                        role="tab" aria-controls="pills-ecom" aria-selected="false">Social Media Design</a>
+                    <a id="pills-ecom-tab" data-bs-toggle="pill" data-bs-target="#pills-ecom" type="button" role="tab"
+                        aria-controls="pills-ecom" aria-selected="false">Social Media Design</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a id="pills-video-tab" data-bs-toggle="pill" data-bs-target="#pills-video" type="button"

@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 foot-about">
-                        <a href="{{route('home')}}"><img src="{{asset('assets/img/logo.png')}}" alt="footer-logo"></a>
+                        <img class="footer-img" src="{{asset('assets/img/footer-logo.png')}}" alt="footer-logo" style="width: 120px; margin-bottom: 20px">
                         <p>Nova Creation is a creative design studio
                             dedicated to crafting logos, websites,
                             social media visuals, and presentations that

@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CallbackController;
 Route::get('/', function () {
     return view('home');
 })->name('home');
@@ -49,3 +49,6 @@ Route::get('/cover-design', function () {
 Route::get('/ui-ux', function () {
     return view('services.ui');
 })->name('ui');
+
+
+Route::post('/callback', [CallbackController::class, 'submit'])->name('callback.submit');

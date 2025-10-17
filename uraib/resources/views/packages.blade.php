@@ -20,7 +20,13 @@
                 <div class="col-lg-5">
                     <div class="h_banner_form bg-white gradient-animate">
                         <h2 class="theme-hd">Hire A Creative Mind</h2>
-                        <form action="https://techsolit.com/code.php" method="post" onsubmit="return checkform(this);">
+                        <form action="{{ route('callback.submit') }}" method="post">
+                               @csrf
+                            @if (session('success'))
+                                <div style="color: green; font-weight: bold; margin-bottom: 15px;">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
                             <div class="d-flex">
                                 <div class="form-group">
                                     <i class="fa fa-user" aria-hidden="true"></i>

@@ -27,27 +27,35 @@
                     <p class="theme-para">Got questions about using our service or anything else? Contact us today, our
                         team is eager to help!</p>
                     <div class="h_banner_form">
-                        <form action="https://techsolit.com/code.php" method="post" onsubmit="return checkform(this);">
+                        <form action="{{ route('callback.submit') }}" method="post" >
+                            @if (session('success'))
+                                <div style="color: green; font-weight: bold; margin-bottom: 15px;">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
+                            @csrf
                             <div class="d-flex">
                                 <div class="form-group">
                                     <i class="fa fa-user" aria-hidden="true"></i>
                                     <input type="text" name="h_name" placeholder="Enter Your Full Name"
-                                        class="form-control" required="required">
+                                        class="form-control" required="required"
+                                        style="color: black; background-color: white;">
                                 </div>
                                 <div class="form-group">
                                     <i class="fa fa-envelope" aria-hidden="true"></i>
                                     <input type="email" name="h_email" placeholder="Enter Your Email Address"
-                                        class="form-control" required="required">
+                                        class="form-control" required style="color: black; background-color: white;">
                                 </div>
                             </div>
                             <div class="form-group">
                                 <i class="fa fa-phone" aria-hidden="true"></i>
                                 <input type="number" name="h_num" placeholder="Enter Your Phone Number"
-                                    class="form-control" required="required">
+                                    class="form-control" required="required" style="color: black; background-color: white;">
                             </div>
                             <div class="form-group">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                                <textarea class="form-control" placeholder="Additional question if any" name="h_msg"></textarea>
+                                <textarea class="form-control" placeholder="Additional question if any" name="h_msg"
+                                    style="color: black; background-color: white;"></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="h_b_btn" name="banner_btn">Request A Callback</button>
@@ -57,8 +65,8 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="cnt-info">
-                        <a href="tel:+1234567801"><i class="fa fa-phone"></i> +1234567801</a>
-                        <a href="mailto:info@yourdomain.com"><i class="fa fa-envelope"></i> info@yourdomain.com</a>
+                        <a href="tel:+1234567801"><i class="fa fa-phone"></i> +93 3283 394 910</a>
+                        <a href="mailto:info@yourdomain.com"><i class="fa fa-envelope"></i> info@novacreation.uk</a>
                         <a href="#"><i class="fa fa-map-marker"></i> your location goes here</a>
                     </div>
                     <div class="accordion" id="accordionExample">

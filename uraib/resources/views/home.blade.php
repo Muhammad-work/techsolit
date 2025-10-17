@@ -124,7 +124,7 @@
 
             <div class="row service-box justify-content-center">
                 <div class="col-lg-4 web">
-                    <a href="services/web-design.html" class="service-type-box">
+                    <a href="{{route('logo')}}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-1.png') }}"
                                 class="service-icon"></span>
                         <h2>Logo Design </h2>
@@ -134,7 +134,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 logo">
-                    <a href="services/logo-design.html" class="service-type-box">
+                    <a href="{{route('socail')}}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-2.png') }}"
                                 class="service-icon"></span>
                         <h2>Social Media Design</span></h2>
@@ -144,7 +144,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 ecom">
-                    <a href="services/ecommerce.html" class="service-type-box">
+                    <a href="{{route('Presentation')}}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-3.png') }}"
                                 class="service-icon"></span>
                         <h2>Presentation Design</h2>
@@ -154,7 +154,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 seo">
-                    <a href="services/seo.html" class="service-type-box">
+                    <a href="{{route('cover-design')}}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-4.png') }}"
                                 class="service-icon"></span>
                         <h2>E-Book & Cover Design</h2>
@@ -164,7 +164,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 smm">
-                    <a href="services/smm.html" class="service-type-box">
+                    <a href="{{route('ui')}}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-5.png') }}"
                                 class="service-icon"></span>
                         <h2>UI/UX Design</h2>
@@ -216,8 +216,8 @@
                 <div class="tab-pane fade show active" id="pills-logo" role="tabpanel" aria-labelledby="pills-logo-tab">
                     <ul class="responsive-slider">
                         <li>
-                            <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-1.jpg') }}">
+                            <a data-fancybox="portfoliologo" >
+                                <img  alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-1.jpg') }}">
                             </a>
                         </li>
                         <li>

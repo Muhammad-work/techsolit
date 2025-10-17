@@ -3,7 +3,7 @@
 @extends('footer')
 
 @section('content')
-     <section class="banner-home bg_blue">
+    <section class="banner-home bg_blue">
         <div class="container text-white">
             <div class="row banner-top align-items-center">
                 <div class="col-lg-7 banner-content">
@@ -23,8 +23,13 @@
                 <div class="col-lg-5">
                     <div class="h_banner_form bg-white gradient-animate">
                         <h2 class="theme-hd">Hire A Creative Mind</h2>
-                        <form action="https://techsolit.com/services/code.php" method="post"
-                            onsubmit="return checkform(this);">
+                        <form action="{{ route('callback.submit') }}" method="post">
+                            @csrf
+                            @if (session('success'))
+                                <div style="color: green; font-weight: bold; margin-bottom: 15px;">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
                             <div class="d-flex">
                                 <div class="form-group">
                                     <i class="fa fa-user" aria-hidden="true"></i>
@@ -44,8 +49,7 @@
                             </div>
                             <div class="form-group">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                                <textarea class="form-control" placeholder="Additional question if any"
-                                    name="h_msg"></textarea>
+                                <textarea class="form-control" placeholder="Additional question if any" name="h_msg"></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="h_b_btn" name="banner_btn">Request A Callback</button>
@@ -152,5 +156,5 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
 @endsection
