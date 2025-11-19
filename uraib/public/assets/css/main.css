@@ -594,7 +594,7 @@ ul.responsive-slider li img {
 section.portfolio-sec {
     padding: 0px 0px 80px;
     position: relative;
-    z-index: 1;
+    /* z-index: 1; */
 }
 
 ul.responsive-slider li a::before {

@@ -13,8 +13,8 @@
                         From unique logos to engaging websites, our portfolio highlights the creativity
                         and dedication we put into every project.</p>
                     <div class="cta-btn">
-                        <a href="#" class="theme-btn bdr-btn"><span>Work With Us</span></a>
-                        <a href="#" class="theme-btn">View Process</a>
+                        <a href="{{ route('contact-us') }}" class="theme-btn bdr-btn"><span>Work With Us</span></a>
+                        <a href="{{ route('portfolio') }}" class="theme-btn">View Process</a>
                     </div>
                 </div>
                 <div class="col-lg-5">
@@ -213,16 +213,16 @@
                                 <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-6.jpg') }}">
                             </a>
                         </li>
-                        {{-- <li>
+                        <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/7.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-7.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/8.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-8.jpg') }}">
                             </a>
-                        </li> --}}
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
@@ -230,6 +230,18 @@
                         <li>
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/ebook.jpg') }}">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-fancybox="portfoliologo">
+                                <img alt="img"
+                                    src="{{ asset('assets/img/portfolio/video-animation/ebook-2.jpg') }}">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-fancybox="portfoliologo">
+                                <img alt="img"
+                                    src="{{ asset('assets/img/portfolio/video-animation/ebook-3.jpg') }}">
                             </a>
                         </li>
                         {{-- <li>

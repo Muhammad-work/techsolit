@@ -3,7 +3,7 @@
 @extends('footer')
 
 @section('content')
-     <section class="banner-home bg_blue">
+    <section class="banner-home bg_blue">
         <div class="container text-white">
             <div class="row banner-top align-items-center">
                 <div class="col-lg-7 banner-content">
@@ -21,7 +21,7 @@
                     <div class="h_banner_form bg-white gradient-animate">
                         <h2 class="theme-hd">Hire A Creative Mind</h2>
                         <form action="{{ route('callback.submit') }}" method="post">
-                               @csrf
+                            @csrf
                             @if (session('success'))
                                 <div style="color: green; font-weight: bold; margin-bottom: 15px;">
                                     {{ session('success') }}
@@ -46,8 +46,7 @@
                             </div>
                             <div class="form-group">
                                 <i class="fa fa-pencil" aria-hidden="true"></i>
-                                <textarea class="form-control" placeholder="Additional question if any"
-                                    name="h_msg"></textarea>
+                                <textarea class="form-control" placeholder="Additional question if any" name="h_msg"></textarea>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="h_b_btn" name="banner_btn">Request A Callback</button>
@@ -142,7 +141,7 @@
         </div>
     </section>
 
-  <!-- service -->
+    <!-- service -->
     <section class="our-services">
         <div class="container">
             <div class="theme-content text-center">
@@ -155,7 +154,8 @@
             <div class="row service-box justify-content-center">
                 <div class="col-lg-4 web">
                     <a href="services/web-design.html" class="service-type-box">
-                        <span class="img"><img alt="img" src="assets/img/icons/service-1.png" class="service-icon"></span>
+                        <span class="img"><img alt="img" src="assets/img/icons/service-1.png"
+                                class="service-icon"></span>
                         <h2>Logo Design </h2>
                         <p>A unique logo is the face of your brand.
                             At Nova Creation, we design modern and
@@ -164,7 +164,8 @@
                 </div>
                 <div class="col-lg-4 logo">
                     <a href="services/logo-design.html" class="service-type-box">
-                        <span class="img"><img alt="img" src="assets/img/icons/service-2.png" class="service-icon"></span>
+                        <span class="img"><img alt="img" src="assets/img/icons/service-2.png"
+                                class="service-icon"></span>
                         <h2>Social Media Design</span></h2>
                         <p>From posts to banners, we design engaging
                             social media content that boosts your brand’s
@@ -173,7 +174,8 @@
                 </div>
                 <div class="col-lg-4 ecom">
                     <a href="services/ecommerce.html" class="service-type-box">
-                        <span class="img"><img alt="img" src="assets/img/icons/service-3.png" class="service-icon"></span>
+                        <span class="img"><img alt="img" src="assets/img/icons/service-3.png"
+                                class="service-icon"></span>
                         <h2>Presentation Design</h2>
                         <p>Professional and creative pitch decks,
                             business presentations, and slides that make
@@ -182,7 +184,8 @@
                 </div>
                 <div class="col-lg-4 seo">
                     <a href="services/seo.html" class="service-type-box">
-                        <span class="img"><img alt="img" src="assets/img/icons/service-4.png" class="service-icon"></span>
+                        <span class="img"><img alt="img" src="assets/img/icons/service-4.png"
+                                class="service-icon"></span>
                         <h2>E-Book & Cover Design</h2>
                         <p>Beautifully designed e-books and covers that combine
                             readability with creativity, giving your content a
@@ -191,7 +194,8 @@
                 </div>
                 <div class="col-lg-4 smm">
                     <a href="services/smm.html" class="service-type-box">
-                        <span class="img"><img alt="img" src="assets/img/icons/service-5.png" class="service-icon"></span>
+                        <span class="img"><img alt="img" src="assets/img/icons/service-5.png"
+                                class="service-icon"></span>
                         <h2>UI/UX Design</h2>
                         <p>Intuitive, user-friendly, and visually consistent
                             UI/UX designs that bring your digital
@@ -358,16 +362,16 @@
                                 <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-6.jpg') }}">
                             </a>
                         </li>
-                        {{-- <li>
+                        <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/7.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-7.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/8.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-8.jpg') }}">
                             </a>
-                        </li> --}}
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
@@ -375,6 +379,18 @@
                         <li>
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/ebook.jpg') }}">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-fancybox="portfoliologo">
+                                <img alt="img"
+                                    src="{{ asset('assets/img/portfolio/video-animation/ebook-2.jpg') }}">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-fancybox="portfoliologo">
+                                <img alt="img"
+                                    src="{{ asset('assets/img/portfolio/video-animation/ebook-3.jpg') }}">
                             </a>
                         </li>
                         {{-- <li>
@@ -462,7 +478,7 @@
         </div>
     </section>
 
-     <section class="process-sec">
+    <section class="process-sec">
         <div class="container-fluid">
             <div class="row align-items-center">
                 <div class="col-lg-7 lf-side">
@@ -518,5 +534,5 @@
                 </div>
             </div>
         </div>
-    </section>   
+    </section>
 @endsection

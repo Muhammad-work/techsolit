@@ -13,8 +13,8 @@
                         eye-catching designs — from logos and websites to social media content
                         and presentations — helping your brand stand out with creativity that connects. </p>
                     <div class="cta-btn">
-                        <a href="#" class="theme-btn bdr-btn"><span>Work With Us</span></a>
-                        <a href="#" class="theme-btn">View Process</a>
+                        <a href="{{route('contact-us')}}" class="theme-btn bdr-btn"><span>Work With Us</span></a>
+                        <a href="{{route('portfolio')}}" class="theme-btn">View Process</a>
                     </div>
                 </div>
                 <div class="col-lg-6 banner-img scene">
@@ -32,27 +32,27 @@
             <div class="counter-area">
                 <div class="counter-content bg-pink ">
                     <h2>
-                        <div class="stat-number" data-n="35"><span class="Single">36.5</span>k+</div>
+                        <div class="stat-number" data-n="35"><span class="Single">100</span>%</div>
                     </h2>
-                    <span>Happy Clients </span>
+                    <span>Creative & Original Designs </span>
                 </div>
                 <div class="counter-content bg-green ">
                     <h2>
-                        <div class="stat-number" data-n="35"><span class="Single">36</span>k+</div>
+                        <div class="stat-number" data-n="35"><span class="Single">24/7</span></div>
                     </h2>
-                    <span>Projects Delivered </span>
+                    <span>Reliable Communication </span>
                 </div>
                 <div class="counter-content bg-blue">
                     <h2>
-                        <div class="stat-number" data-n="35"><span class="Single">423</span>+</div>
+                        <div class="stat-number" data-n="35"><span class="Single">∞</span></div>
                     </h2>
-                    <span>Team Players </span>
+                    <span>Innovative <br> Ideas </span>
                 </div>
                 <div class="counter-content bg-pink">
                     <h2>
-                        <div class="stat-number" data-n="35"><span class="Single">23</span>+</div>
+                        <div class="stat-number" data-n="35"><span class="Single">Your Project</span></div>
                     </h2>
-                    <span>Excellence Awards</span>
+                    <span>Our First Priority</span>
                 </div>
             </div>
         </div>
@@ -81,31 +81,31 @@
                         attention to detail, and designs that leave a lasting impression. Nova Creation is more
                         than just design—it’s about transforming ideas into meaningful visual experiences.</p>
                     <!-- <ul class="about-list">
-                                <li>
-                                    <span class="list-info">
-                                        <span class="title">Boosting the Organization: </span>
-                                        <span class="desc">Hiring the most polished and skilled individuals to help put the work
-                                            satisfaction of the company at higher values with our clients, and making sure we
-                                            meet every demand our client requires.</span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span class="list-info">
-                                        <span class="title">Satisfied Clients</span>
-                                        <span class="desc">A number of satisfied clients that prove our consistency and
-                                            dedication towards them. We believe in creating cordial and long term relationships
-                                            with our clients. </span>
-                                    </span>
-                                </li>
-                                <li>
-                                    <span class="list-info">
-                                        <span class="title">Projects Delivered</span>
-                                        <span class="desc">We have completed tens of thousands of projects to date, and our
-                                            established portfolio and client list of major corporations attest to the caliber of
-                                            the work we produce.</span>
-                                    </span>
-                                </li>
-                            </ul> -->
+                                    <li>
+                                        <span class="list-info">
+                                            <span class="title">Boosting the Organization: </span>
+                                            <span class="desc">Hiring the most polished and skilled individuals to help put the work
+                                                satisfaction of the company at higher values with our clients, and making sure we
+                                                meet every demand our client requires.</span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="list-info">
+                                            <span class="title">Satisfied Clients</span>
+                                            <span class="desc">A number of satisfied clients that prove our consistency and
+                                                dedication towards them. We believe in creating cordial and long term relationships
+                                                with our clients. </span>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="list-info">
+                                            <span class="title">Projects Delivered</span>
+                                            <span class="desc">We have completed tens of thousands of projects to date, and our
+                                                established portfolio and client list of major corporations attest to the caliber of
+                                                the work we produce.</span>
+                                        </span>
+                                    </li>
+                                </ul> -->
                     <a href="about.html" class="theme-btn">View More</a>
                 </div>
             </div>
@@ -124,7 +124,7 @@
 
             <div class="row service-box justify-content-center">
                 <div class="col-lg-4 web">
-                    <a href="{{route('logo')}}" class="service-type-box">
+                    <a href="{{ route('logo') }}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-1.png') }}"
                                 class="service-icon"></span>
                         <h2>Logo Design </h2>
@@ -134,7 +134,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 logo">
-                    <a href="{{route('socail')}}" class="service-type-box">
+                    <a href="{{ route('socail') }}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-2.png') }}"
                                 class="service-icon"></span>
                         <h2>Social Media Design</span></h2>
@@ -144,7 +144,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 ecom">
-                    <a href="{{route('Presentation')}}" class="service-type-box">
+                    <a href="{{ route('Presentation') }}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-3.png') }}"
                                 class="service-icon"></span>
                         <h2>Presentation Design</h2>
@@ -154,7 +154,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 seo">
-                    <a href="{{route('cover-design')}}" class="service-type-box">
+                    <a href="{{ route('cover-design') }}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-4.png') }}"
                                 class="service-icon"></span>
                         <h2>E-Book & Cover Design</h2>
@@ -164,7 +164,7 @@
                     </a>
                 </div>
                 <div class="col-lg-4 smm">
-                    <a href="{{route('ui')}}" class="service-type-box">
+                    <a href="{{ route('ui') }}" class="service-type-box">
                         <span class="img"><img alt="img" src="{{ asset('assets/img/icons/service-5.png') }}"
                                 class="service-icon"></span>
                         <h2>UI/UX Design</h2>
@@ -216,8 +216,8 @@
                 <div class="tab-pane fade show active" id="pills-logo" role="tabpanel" aria-labelledby="pills-logo-tab">
                     <ul class="responsive-slider">
                         <li>
-                            <a data-fancybox="portfoliologo" >
-                                <img  alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-1.jpg') }}">
+                            <a data-fancybox="portfoliologo">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/Presentation-1.jpg') }}">
                             </a>
                         </li>
                         <li>
@@ -333,16 +333,16 @@
                                 <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-6.jpg') }}">
                             </a>
                         </li>
-                        {{-- <li>
+                        <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/7.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-7.jpg') }}">
                             </a>
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/8.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/ecommerce/socail-8.jpg') }}">
                             </a>
-                        </li> --}}
+                        </li>
                     </ul>
                 </div>
                 <div class="tab-pane fade" id="pills-video" role="tabpanel" aria-labelledby="pills-video-tab">
@@ -350,6 +350,16 @@
                         <li>
                             <a data-fancybox="portfoliologo">
                                 <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/ebook.jpg') }}">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-fancybox="portfoliologo">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/ebook-2.jpg') }}">
+                            </a>
+                        </li>
+                        <li>
+                            <a data-fancybox="portfoliologo">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/video-animation/ebook-3.jpg') }}">
                             </a>
                         </li>
                         {{-- <li>
@@ -403,7 +413,7 @@
                         </li>
                         <li>
                             <a data-fancybox="portfoliologo">
-                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/logo-3.jpg') }}">
+                                <img alt="img" src="{{ asset('assets/img/portfolio/logo/logo-3.jpeg') }}">
                             </a>
                         </li>
                         {{-- <li>
@@ -462,7 +472,7 @@
                     <div class="row">
                         <div class="col-lg-4">
                             <div class="icon-box">
-                                <img src="{{asset('assets/img/technical-suppo.webp')}}" alt="icon01">
+                                <img src="{{ asset('assets/img/technical-suppo.webp') }}" alt="icon01">
                                 <span class="title">Create</span>
                                 <p>We believe in being good at creating. Dedicated workers do their best work, with
                                     following deadlines.</p>
@@ -470,7 +480,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="icon-box">
-                                <img src="{{asset('assets/img/analyzing.webp')}}" alt="icon02">
+                                <img src="{{ asset('assets/img/analyzing.webp') }}" alt="icon02">
                                 <span class="title">Refine </span>
                                 <p>Every detail matters. We carefully review,
                                     analyze, and refine your designs to ensure
@@ -480,7 +490,7 @@
                         </div>
                         <div class="col-lg-4">
                             <div class="icon-box">
-                                <img src="{{asset('assets/img/camera-dolly.webp')}}" alt="icon03">
+                                <img src="{{ asset('assets/img/camera-dolly.webp') }}" alt="icon03">
                                 <span class="title">Deliver </span>
                                 <p>You will have access to all the work, regarding your work, you will be delivered with
                                     the best work with everything you want it to be.</p>
@@ -489,7 +499,7 @@
                     </div>
                 </div>
                 <div class="col-lg-5 rt-side">
-                    <img src="{{asset('assets/img/banner.jpg')}}" alt="lf-img">
+                    <img src="{{ asset('assets/img/banner.jpg') }}" alt="lf-img">
                 </div>
             </div>
         </div>
